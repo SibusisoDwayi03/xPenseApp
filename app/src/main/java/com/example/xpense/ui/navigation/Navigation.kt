@@ -190,7 +190,7 @@ fun BottomBar(navController: NavHostController) {
                 )
             },
             label = {
-                Text(text = "Transactions")
+                Text(text = "ExpenseList")
             },
 
 

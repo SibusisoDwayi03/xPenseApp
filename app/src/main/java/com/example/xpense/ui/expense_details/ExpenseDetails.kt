@@ -9,6 +9,7 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.ArrowBack
+import androidx.compose.material.icons.outlined.Delete
 import androidx.compose.material.icons.outlined.Edit
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -62,10 +63,8 @@ fun TransactionDetails(
                         )
                     )
                 }) {
-                  //  Icon(imageVector = Icons.Outlined.Delete, contentDescription = "Delete")
+                    Icon(imageVector = Icons.Outlined.Delete, contentDescription = "Delete")
                 }
-//                IconButton(onClick = { viewModel.onEvent(TransactionsDetailEvent.Share(context)) }) {
-//                    Icon(imageVector = Icons.Outlined.Share, contentDescription = "Share")
                 }
             }
         }

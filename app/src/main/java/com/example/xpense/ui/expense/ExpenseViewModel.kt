@@ -65,15 +65,6 @@ class ExpenseViewModel @Inject constructor(
                                 else -> {
                                     it.reversed()
                                 }
-                           //     "Income" -> {
-                         //           it.filter { transaction ->
-                          //              transaction.transactionType == "Income"
-
-                          //          }.reversed()
-                       //         }
-                       //         else -> {
-                      //              it.reversed()
-                     //           }
                             }
                         )
                     }

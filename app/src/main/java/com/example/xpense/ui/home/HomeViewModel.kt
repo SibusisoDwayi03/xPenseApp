@@ -26,8 +26,6 @@ class HomeViewModel @Inject constructor(
                     totalBalance = transactions.filter { transaction -> transaction.transactionType == "Income" }
                         .sumOf { it.amount } - transactions.filter { transaction -> transaction.transactionType == "Expense" }
                         .sumOf { it.amount },
-                   // income = transactions.filter { it.transactionType == "Income" }.takeLast(2)
-                    //    .sumOf { it.amount },
                     expense = transactions.filter { it.transactionType == "Expense" }.takeLast(2)
                         .sumOf { it.amount }
                 )
@@ -36,7 +34,6 @@ class HomeViewModel @Inject constructor(
                     list = transactions.takeLast(4).reversed()
                 )
             }
-
         }
 
     }
